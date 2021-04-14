@@ -30,24 +30,34 @@ npm run test --test=camel # para testar o desafio camelCase
  
  As funções dos desafios devem ser implementadas nos arquivos correspondentes na pasta `src` e você deve rodar o comando `npm run test` para validar se a função foi corretamente implementada.
 
-Por exemplo, para realizar o desafio `SortList` você deve implementar a função no arquivo `src/sortList.js`, e após isso rodar os testes para validar.
-## Desafio #1 SortList
-Implemente no arquivo: `src/sortList.js`
+Por exemplo, para realizar o desafio `FuelSpent` você deve implementar a função no arquivo `src/fuelSpent.js`, e após isso rodar os testes para validar.
+## Desafio #1 fuelSpent
+Implemente no arquivo: `src/fuelSpent.js`
 
-O objetivo é implementar uma função que reordene e retorne uma lista passada em ordem alfabetica crescente, ou seja:
+O Joãozinho quer calcular e mostrar a quantidade de litros de combustível gasto em uma viagem, usando um carro que faz 12 Km / L. Para isso, ele gostaria que você o ajudasse por meio de um programa simples. Para realizar o cálculo, é necessário ler o tempo gasto (em horas) e a mesma velocidade média (km / h). Desta forma, você pode obter a distância e, em seguida, calcular quantos litros seriam necessários. Mostre o valor inteiro arredondado para cima se necessário, por exemplo: 10.5 litros seria arredondado para 11 litros.
+
+* Entrada: 
+A função deve receber dois inteiros. O primeiro é o tempo gasto na viagem (em horas). O segundo é a velocidade média durante a viagem (em Km / h).
+
+* Saída: Deve retornar um inteiro informando a quantidade em litros necessária para realizar a viagem.
+
 ```js
-sortList([3,2,1]); // deve retornar [1,2,3]
-sortList([6,4,5]); // deve retornar [4,5,6]
-sortList(["c","b","a"]); // deve retornar ["a","b", "c"]
+fuelSpent(10,85); // deve retornar 71
+fuelSpent(2, 92); // deve retornar 15
+fuelSpent(22, 67); // deve retornar 123
 ```
 
-## Desafio #2 CamelCase
-Implemente no arquivo: `src/camelCase.js`
+## Desafio #2 Salary Bonus
+Implemente no arquivo: `src/salaryBonus.js`
 
-O propósito é implementar uma função que transforme uma sentença passada para o estilo camelCase e a retorne:
+O propósito é implementar uma função que receba o salário fixo de um vendedor e o total de vendido por esse vendedor e retornar o salário + 15% de comissão em cima do total vendido:
 ```js
-camelCase("one word") // resulta oneWord
-camelCase("I said one word!!") // resulta iSaidOneWord
+salaryBonus(500.00, 1230.30); // resulta em 684.54;
+salaryBonus(700.00, 0.00); // resulta em 700.00;
+salaryBonus(1700.00, 1230.50); // resulta em 1884.58;
+salaryBonus(500.00, 1230.30); // resulta em 684.54;
+salaryBonus(700.00, 0.00); // resulta em 700.00;
+salaryBonus(1700.00, 1230.50); // resulta em 1884.58;
 ```
 
 ## Desafio #3 DeduplicateSentence
